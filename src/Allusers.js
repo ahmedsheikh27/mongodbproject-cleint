@@ -8,7 +8,7 @@ import img from "./assests/plus.png"
 import edit from "./assests/edit.png"
 import del from "./assests/delete.png"
 function Allusers() {
-    const URL = "http://localhost:8000"
+    const URL = "http://localhost:3000"
 
     const [state, setState] = useState({
         name: "",
@@ -34,7 +34,7 @@ function Allusers() {
                 setDocuments(res.data)
             })
             .catch((err) => {
-                console.error(err)
+             console.error(err)
             })
     }, [documents])
 

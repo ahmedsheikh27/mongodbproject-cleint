@@ -11,7 +11,7 @@ function Register() {
     age: "",
     userName: ""
   })
-  const URL = "http://localhost:8000"
+  const URL = "http://localhost:3000"
 
   const handleChange = e => {
     setState(s => ({ ...s, [e.target.name]: e.target.value }))
